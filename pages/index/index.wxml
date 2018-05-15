@@ -1,2 +1,3 @@
 <!--index.wxml-->
 
+<button class="login-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Get User Info</button>

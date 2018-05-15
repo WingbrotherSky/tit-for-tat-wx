@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "touristappid",
-	"projectname": "tit-for-tat-wx",
+	"appid": "wxf38bc94f92ecb29f",
+	"projectname": "tit-for-tat-wx-registered",
 	"condition": {
 		"search": {
 			"current": -1,
