@@ -1,11 +1,13 @@
 {
   "pages":[
-    "pages/browse/browse",
     "pages/index/index",
-    
+    "pages/browse/browse",
+    "pages/show/show",
     "pages/editprofile/editprofile",
     "pages/addservice/addservice",
+    "pages/contract/contract",
     "pages/msg/msg"
+
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -14,18 +16,27 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar":{
+    "backgroundColor": "#A1D484",
     "list": [{
       "pagePath": "pages/browse/browse",
-      "text": "Search"
+      "text": "Search",
+      "iconPath": "/image/search.png",
+      "selectedIconPath": "/image/search.png"
     }, {
       "pagePath": "pages/addservice/addservice",
-      "text": "Post Service"
+      "text": "Post Service",
+      "iconPath": "/image/add.png",
+      "selectedIconPath": "/image/add.png"
     }, {
-   "pagePath": "pages/msg/msg",
-  "text": "Message"
+   "pagePath": "pages/contract/contract",
+  "text": "Deal",
+  "iconPath": "/image/star.png",
+  "selectedIconPath": "/image/star.png"
     }, {
       "pagePath": "pages/editprofile/editprofile",
-      "text": "My Profile"
+      "text": "My Profile",
+      "iconPath": "/image/user.png",
+      "selectedIconPath": "/image/user.png"
   }]
     }
 }

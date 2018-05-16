@@ -1,4 +1,4 @@
-// pages/editprofile/editprofile.js
+// pages/show/show.js
 Page({
 
   /**

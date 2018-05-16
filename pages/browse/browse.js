@@ -1,7 +1,16 @@
+
+const app = getApp()
+const mock = require('./mock')
+const path = require('./mock')
+
 Page({
   data: {
     inputShowed: false,
     inputVal: ""
+  },
+  onLoad: function () {
+    console.log(423423423, mock)
+    console.log(444444,"test")
   },
   showInput: function () {
     this.setData({
@@ -24,4 +33,4 @@ Page({
       inputVal: e.detail.value
     });
   }
-});
+})
