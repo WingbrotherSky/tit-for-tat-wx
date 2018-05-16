@@ -1,8 +1,0 @@
-<!--index.wxml-->
-
-{{motto}}
-
-<button bindtap="loginbutton" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Let's get start !</button>
-
-
-
