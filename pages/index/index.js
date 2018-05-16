@@ -13,12 +13,5 @@ Page({
    this.setData({
       userInfo: e.detail.userInfo
     })
-  },
-
-  loginbutton: function() {
-    app.globalData.userInfo = e.detail.userInfo 
-    wx.navigateTo({
-      url: "/pages/browse/browse",
-    })
   }
 })
