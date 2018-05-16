@@ -1,9 +1,9 @@
 {
   "pages":[
+    "pages/show/show",
     "pages/index/index",
     "pages/browse/browse",
    
-    
     "pages/editprofile/editprofile",
     "pages/addservice/addservice",
     "pages/msg/msg"
