@@ -1,4 +1,3 @@
-
 const app = getApp()
 const mock = require('./mock')
 const path = require('./mock')

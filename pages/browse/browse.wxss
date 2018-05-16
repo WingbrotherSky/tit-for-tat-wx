@@ -1,3 +1,4 @@
+
 .searchbar-result{
     margin-top: 2;
     font-size: 14px;
@@ -62,3 +63,4 @@
 .card-link:hover {
   opacity: 0.1;
 }
+
