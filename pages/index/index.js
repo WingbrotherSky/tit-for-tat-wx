@@ -4,6 +4,13 @@ const app = getApp()
 
 Page({
 
+
+  goToShowPage: function () {
+    wx.navigateTo({
+      url: '/pages/show/show'
+    })
+  },
+
   data: {
     motto: 'Welcome to PenguinShare'
   },
@@ -15,3 +22,4 @@ Page({
     })
   }
 })
+
