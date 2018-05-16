@@ -1,11 +1,32 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/browse/browse",
+   
+    
+    "pages/editprofile/editprofile",
+    "pages/addservice/addservice",
+    "pages/msg/msg"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar":{
+    "list": [{
+      "pagePath": "pages/browse/browse",
+      "text": "Search"
+    }, {
+      "pagePath": "pages/addservice/addservice",
+      "text": "Post Service"
+    }, {
+   "pagePath": "pages/msg/msg",
+  "text": "Message"
+    }, {
+      "pagePath": "pages/editprofile/editprofile",
+      "text": "My Profile"
+  }]
+    }
 }
