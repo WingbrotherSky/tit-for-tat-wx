@@ -10,4 +10,8 @@
 
 
 
-</view>
+<!-- 
+ <view>Show example page.</view>
+<button bindtap="goToShowPage">Show Page</button> -->
+
+</view> 

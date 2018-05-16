@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/browse/browse",
+    
     "pages/show/show",
     "pages/editprofile/editprofile",
     "pages/addservice/addservice",
@@ -28,8 +29,8 @@
       "iconPath": "/image/add.png",
       "selectedIconPath": "/image/add.png"
     }, {
-   "pagePath": "pages/contract/contract",
-  "text": "Deal",
+   "pagePath": "pages/show/show",
+  "text": "Show",
   "iconPath": "/image/star.png",
   "selectedIconPath": "/image/star.png"
     }, {
