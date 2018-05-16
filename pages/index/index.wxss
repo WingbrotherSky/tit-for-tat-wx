@@ -1,0 +1,15 @@
+
+/**index.wxss**/
+.login-button {
+  background-color: #F9F9F9;
+  
+}
+
+.bg {
+  background-image: url(https://images.pexels.com/photos/4636/person-woman-eyes-face.jpg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  width: 100vw;
+  height: 100vh;
+}
+
+
+

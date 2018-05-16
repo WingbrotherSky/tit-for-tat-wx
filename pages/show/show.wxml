@@ -1,0 +1,22 @@
+
+<!--pages/show/show.wxml-->
+<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/ berlin');">
+  <view class="banner-content">
+    <view class='title'>Name
+    <image class="avatar" src="https://markeytan.github.io/profile/images/28055890_10155762202220091_286136490069246157_n.jpg"></image></view>
+    <view class='teaser'>User Description: </view>
+    <view class='teaser'> Location: </view>
+    <view class='service-title'> Looking for: </view>
+    <view class='margin'/> 
+    <view class='service-title'>Placeholder Service Name</view>
+    <button class="button1">Book</button>
+    <text class='title'>~~~~ </text>
+    <view class='service-title'>Placeholder Service Name 2</view>
+    <button class="button2">Book</button>
+    <text class='title'>~~~~ </text>
+    <view class='service-title'>Placeholder Service Name 3</view>
+    <button class="button3">Book</button>
+    <text class='title'>~~~~</text>
+    </view>
+  </view>
+>>>>>>> 1601e20b9dd7af91c8a8eef9555e8a5c1c912a41
