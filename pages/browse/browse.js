@@ -9,18 +9,34 @@ Page({
     inputVal: "",
     services: []
   },
+
+  // clickback:function(e) {
+  //   wx.navigateBack({
+  //     delta: 1
+  //   })
+  // },
+
+
+
   onLoad: function () {
-    console.log(444444444,'browse Onload')
     
     
     this.setData({ services: mock.services})
-    app.globalData.services = mock.services
-    console.log(this.data.mock, this.data.services)
-    console.log(245, this.data.services[0].user.username)
-    wx.redirectTo({
-      url: '/pages/show/show',
-    })
   },
+
+  showUser: function(e) {
+    const data = e.currentTarget.dataset
+    const user = data.user
+    console.log(user)
+    // wx.navigateTo({
+    //   url: `/pages/show/show?=${user.id}`,
+    // })
+    wx.switchTab({
+      url: `/pages/show/show?=${user.id}`,
+    })
+    console.log(user.id)
+  },
+
   showInput: function () {
     this.setData({
       inputShowed: true

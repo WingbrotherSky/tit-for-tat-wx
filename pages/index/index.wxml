@@ -3,8 +3,9 @@
 <view class="bg">
 
 {{motto}}
+<view>  ~~~~ </view>
 
-<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Let's get start !</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Start browsing!</button>
 
 
 </view> 
