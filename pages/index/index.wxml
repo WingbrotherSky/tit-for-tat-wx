@@ -1,9 +1,10 @@
 <!--index.wxml-->
 
+<view class="bg">
+
 {{motto}}
 
-<button bindtap="loginbutton" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Let's get started! (Check user info)</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Let's get start !</button>
 
-<view>Show example page.</view>
-<button bindtap="goToShowPage">Show Page</button>
 
+</view> 

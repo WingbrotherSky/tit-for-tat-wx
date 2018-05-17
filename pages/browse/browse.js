@@ -1,7 +1,21 @@
+
+const app = getApp()
+const mock = require('./mock')
+const path = require('./mock')
+
 Page({
   data: {
     inputShowed: false,
     inputVal: ""
+  },
+  onLoad: function () {
+    console.log(444444444,'browse Onload')
+    wx.redirectTo({
+      url: '/pages/show/show',
+    })
+    console.log(3423423432, "test")
+    console.log(423423423, mock)
+    console.log(444444, "test")
   },
   showInput: function () {
     this.setData({
@@ -24,4 +38,5 @@ Page({
       inputVal: e.detail.value
     });
   }
-});
+})
+

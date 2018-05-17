@@ -1,16 +1,14 @@
-<view class="page">
-    <view class="page__hd">
-
-    </view>
+<view class="navbar">
+  <view class="page">
     <view class="page__bd">
         <view class="weui-search-bar">
             <view class="weui-search-bar__form">
                 <view class="weui-search-bar__box">
                     <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                    <input type="text" class="weui-search-bar__input" placeholder="Search the Service : )" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
-                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                      <input type="text" class="weui-search-bar__input" placeholder="Search the Service : )" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
                         <icon type="clear" size="14"></icon>
-                    </view>
+                      </view>
                 </view>
             </view>
             <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
@@ -38,4 +36,41 @@
             </navigator>
         </view>
     </view>
+  </view>
+
+<view class="container">
+  <view class="row">
+    <view class="col-xs-12 col-sm-4">
+      <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/190537/pexels-photo-190537.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');">
+      <view class="card-category">Popular</view>
+      <view class="card-description">
+        <text>Let's fix the car</text>
+        <text>...</text>
+      </view>
+      <a class="card-link" href="#" ></a>
+    </view>
+    </view>
+    <view class="col-xs-12 col-sm-4">
+      <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/724022/pexels-photo-724022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');">
+      <view class="card-category">Popular</view>
+      <view class="card-description">
+        <text>Back a cupcake</text>
+        <text>Very delicious!</text>
+      </view>
+      <a class="card-link" href="#" ></a>
+    </view>
+    </view>
+    <view class="col-xs-12 col-sm-4">
+      <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/33242/cooking-ingredient-cuisine-kitchen.jpg?auto=compress&cs=tinysrgb&h=750&w=1260');">
+      <view class="card-category">Popular</view>
+      <view class="card-description">
+        <text>Let's cooking</text>
+        <text>Yum</text>
+      </view>
+      <a class="card-link" href="#" ></a>
+    </view>
+    </view>
+  </view>
+</view>
+
 </view>
