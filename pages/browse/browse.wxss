@@ -1,7 +1,7 @@
 .searchbar-result{
     margin-top: 2;
     font-size: 14px;
-    background-color: black;
+    color: #A1D484;
 }
 .searchbar-result:before{
     display: none;
@@ -13,12 +13,14 @@ color: black;
 
 .weui-cell{
     padding: 12px 15px 12px 35px;
+    color: black;
 }
 
 .navbar {
-  background-color: #A1D484;
-  color: white;
+  background-color: ;
+  color: black;
 }
+
 
 .card {
   height: 175px;
@@ -41,6 +43,7 @@ color: black;
   left: 10px;
   font-size: 15px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .card-description {
   position: absolute;

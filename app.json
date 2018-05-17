@@ -16,7 +16,8 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar":{
-    "backgroundColor": "#A1D484",
+    "backgroundColor": "#6AC71F",
+    "color": "#FCFAF4",
     "list": [{
       "pagePath": "pages/browse/browse",
       "text": "Search",
