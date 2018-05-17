@@ -6,9 +6,9 @@ Page({
   },
   getUserInfo: function(e) {
     console.log(343434,e)
-    app.globalData.userinfo = e.detail.userinfo
+    app.globalData.userInfo = e.detail.userInfo
     this.setData({
-      userinfo: e.detail.userinfo
+      userInfo: e.detail.userInfo
     })
 
     wx.reLaunch({

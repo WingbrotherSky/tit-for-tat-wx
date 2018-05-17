@@ -5,7 +5,7 @@ App({
     console.log('processing to login')
     wx.login({
       success: res => {
-        console.log(res)
+        console.log(333333,res)
         // insert next code here
         wx.request({
           url: host + 'api/v1/login', 
