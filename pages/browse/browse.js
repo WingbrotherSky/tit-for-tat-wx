@@ -16,6 +16,8 @@ Page({
     console.log(3423423432, "test")
     console.log(423423423, mock)
     console.log(444444, "test")
+    this.setData({mock : mock})
+    console.log(222222,this.data.mock)
   },
   showInput: function () {
     this.setData({

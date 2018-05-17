@@ -2,6 +2,35 @@ Page({
   data: {
     files: []
   },
+
+  bindSubmit: function (e) {
+    let service = e.detail.value.service;
+    let description = e.detail.value.description;
+    let id = this.data.id;
+
+    let userservice = {
+      service: service,
+      description: description
+    }
+
+
+  wx.request({
+    url: '/pages/addservice/addservice', //Waiting for Server//
+    method: "POST",
+    data: userservice,
+    success(res){
+      wx.redirectTo({
+        url: '/pages/show/show'
+      })
+    }
+  })
+  }
+  ,
+
+  onLoad: function (options) {
+
+  },
+
   chooseImage: function (e) {
     var that = this;
     wx.chooseImage({

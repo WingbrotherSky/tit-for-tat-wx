@@ -9,8 +9,8 @@ Page({
 click:function(e) {
   wx.navigateBack({
     delta: 1
-  })
-}
+      })
+    }
 
   },
 
