@@ -2,12 +2,12 @@
   "pages":[
     "pages/index/index",
     "pages/browse/browse",
-    
     "pages/show/show",
     "pages/editprofile/editprofile",
     "pages/addservice/addservice",
     "pages/contract/contract",
-    "pages/msg/msg"
+    "pages/msg/msg",
+    "pages/service/service"
 
   ],
   "window":{
@@ -34,8 +34,8 @@
   "iconPath": "/image/star.png",
   "selectedIconPath": "/image/star.png"
     }, {
-      "pagePath": "pages/editprofile/editprofile",
-      "text": "My Profile",
+      "pagePath": "pages/service/service",
+      "text": "My Service",
       "iconPath": "/image/user.png",
       "selectedIconPath": "/image/user.png"
   }]
