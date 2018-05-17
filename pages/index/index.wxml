@@ -4,14 +4,7 @@
 
 {{motto}}
 
-<button bindtap="login-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Let's get start !</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Let's get start !</button>
 
-
-
-
-
-<!-- 
- <view>Show example page.</view>
-<button bindtap="goToShowPage">Show Page</button> -->
 
 </view> 

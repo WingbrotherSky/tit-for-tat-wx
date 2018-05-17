@@ -5,7 +5,7 @@ Page({
     motto: "Welcome to PenguinShare"
   },
   getUserInfo: function(e) {
-    console.log(e)
+    console.log(343434,e)
     app.globalData.userinfo = e.detail.userinfo
     this.setData({
       userinfo: e.detail.userinfo

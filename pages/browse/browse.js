@@ -8,13 +8,14 @@ Page({
     inputShowed: false,
     inputVal: ""
   },
-  // onLoad: function () {
-  //   wx.redirectTo({
-  //     url: '/pages/show/show',
-  //   })
-  //   console.log(3423423432, "test")
-  //   console.log(423423423, mock)
-  //   console.log(444444, "test")
+  onLoad: function () {
+    console.log(444444444,'browse Onload')
+    wx.redirectTo({
+      url: '/pages/show/show',
+    })
+    console.log(3423423432, "test")
+    console.log(423423423, mock)
+    console.log(444444, "test")
   },
   showInput: function () {
     this.setData({
