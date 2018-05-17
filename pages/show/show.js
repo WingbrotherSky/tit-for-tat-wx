@@ -1,3 +1,5 @@
+const mock = require('./mock')
+
 // pages/show/show.js
 Page({
 
@@ -6,19 +8,21 @@ Page({
    */
   data: {
 
-click:function(e) {
-  wx.navigateBack({
-    delta: 1
-  })
-}
 
   },
+    // click:function(e) {
+    //   wx.navigateBack({
+    //     delta: 1
+    //   })ß
+    // }
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let user = mock
+    this.setData({user: mock})
+    console.log(this.data.user)
   },
 
   /**

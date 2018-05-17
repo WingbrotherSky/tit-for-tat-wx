@@ -1,9 +1,9 @@
 module.exports = {
-  "services": [
+  services: [
     {
       "id": 1,
       "user_id": 1,
-      "name": "Arthricia",
+      "name": "Painting unique car designs!",
       "description": "It’s Peanut Butter Jelly Time.",
       "image_url": "Elaine Benes",
       "user": {
@@ -12,10 +12,11 @@ module.exports = {
         "bio": "What is my purpose. You pass butter. Oh My God. Yeah, Welcome to the club pal."
       }
     },
+
     {
       "id": 2,
       "user_id": 2,
-      "name": "Tammy Gueterman",
+      "name": "Homemade baked goods!",
       "description": "A degenerate, am I? Well, you are a festisio! See? I can make up words too, sister.",
       "image_url": "J Peterman",
       "user": {
@@ -27,7 +28,7 @@ module.exports = {
     {
       "id": 3,
       "user_id": 3,
-      "name": "Morty Jr.",
+      "name": "Keto cooking!",
       "description": "Hey, don't try to take this away from me. This is the only thing I've ever been good at. Well, this and timing my farts to a thunderstorm.",
       "image_url": "Russell Dalrymple",
       "user": {

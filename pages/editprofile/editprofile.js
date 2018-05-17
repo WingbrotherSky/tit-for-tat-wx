@@ -1,3 +1,5 @@
+const app = getApp()
+
 // pages/editprofile/editprofile.js
 Page({
 
@@ -12,7 +14,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let userId = app.globalData.userId
+    console.log(userId)
   },
 
   /**

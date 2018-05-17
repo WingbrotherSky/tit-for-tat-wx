@@ -6,17 +6,37 @@ const path = require('./mock')
 Page({
   data: {
     inputShowed: false,
-    inputVal: ""
+    inputVal: "",
+    services: []
   },
+
+  // clickback:function(e) {
+  //   wx.navigateBack({
+  //     delta: 1
+  //   })
+  // },
+
+
+
   onLoad: function () {
-    console.log(444444444,'browse Onload')
-    wx.redirectTo({
-      url: '/pages/show/show',
-    })
-    console.log(3423423432, "test")
-    console.log(423423423, mock)
-    console.log(444444, "test")
+    
+    
+    this.setData({ services: mock.services})
   },
+
+  showUser: function(e) {
+    const data = e.currentTarget.dataset
+    const user = data.user
+    console.log(user)
+    // wx.navigateTo({
+    //   url: `/pages/show/show?=${user.id}`,
+    // })
+    wx.switchTab({
+      url: `/pages/show/show?=${user.id}`,
+    })
+    console.log(user.id)
+  },
+
   showInput: function () {
     this.setData({
       inputShowed: true

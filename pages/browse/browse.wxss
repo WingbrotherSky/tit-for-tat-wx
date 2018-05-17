@@ -1,18 +1,26 @@
 .searchbar-result{
     margin-top: 2;
     font-size: 14px;
+    color: #A1D484;
 }
 .searchbar-result:before{
     display: none;
 }
+
+.weui-search-bar_input {
+color: black;
+}
+
 .weui-cell{
     padding: 12px 15px 12px 35px;
+    color: black;
 }
 
 .navbar {
-  background-color: #A1D484;
-  color: white;
+  background-color: ;
+  color: black;
 }
+
 
 .card {
   height: 175px;
@@ -35,6 +43,7 @@
   left: 10px;
   font-size: 15px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .card-description {
   position: absolute;
@@ -59,6 +68,39 @@
   background: black;
   opacity: 0;
 }
+
 .card-link:hover {
   opacity: 0.1;
+}
+
+.avatar {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 1px;
+}
+
+ 
+.userProfile-name {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  font-size: 15px;
+} 
+
+.avatar-large {
+  width: 40px;
+  border-radius: 50%;
+}
+.avatar-bordered {
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+.avatar-square {
+  width: 20px;
+  border-radius: 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
 }
