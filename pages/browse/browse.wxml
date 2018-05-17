@@ -37,40 +37,57 @@
         </view>
     </view>
   </view>
-
+</view>
 <view class="container">
   <view class="row">
-    <view class="col-xs-12 col-sm-4">
+    <!-- <view class="col-xs-12 col-sm-4">
       <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/190537/pexels-photo-190537.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');">
-      <view class="card-category">Popular</view>
-      <view class="card-description">
-        <text>Let's fix the car</text>
-        <text>...</text>
-      </view>
+        <view class="card-category">{{services[0].name}}</view>
+        <view class="userProfile-name">{{services[0].user.username}}
+          <image class="avatar" src="https://picsum.photos/200/300"></image>
+        </view>
+        <view class="card-description">
+          <text>{{services[0].description}}</text>
+        </view>
       <a class="card-link" href="#" ></a>
-    </view>
+      </view>
     </view>
     <view class="col-xs-12 col-sm-4">
       <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/724022/pexels-photo-724022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');">
-      <view class="card-category">Popular</view>
-      <view class="card-description">
-        <text>Back a cupcake</text>
-        <text>Very delicious!</text>
+        <view class="card-category">{{services[1].name}}</view>
+        <view class="userProfile-name">{{services[1].user.username}}
+          <image class="avatar" src="https://picsum.photos/200/300"></image>
+        </view>
+        <view class="card-description">
+          <text>{{services[1].description}}</text>
+        </view>
+        <a class="card-link" href="#" ></a>
       </view>
-      <a class="card-link" href="#" ></a>
-    </view>
     </view>
     <view class="col-xs-12 col-sm-4">
       <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/33242/cooking-ingredient-cuisine-kitchen.jpg?auto=compress&cs=tinysrgb&h=750&w=1260');">
-      <view class="card-category">Popular</view>
-      <view class="card-description">
-        <text>Let's cooking</text>
-        <text>Yum</text>
+        <view class="card-category">{{services[2].name}}</view>
+        <view class="userProfile-name">{{services[2].user.username}}
+          <image class="avatar" src="https://picsum.photos/200/300"></image>
+        </view>
+        <view class="card-description">
+          <text>{{services[2].description}}</text>
+        </view>
+        <a class="card-link" href="#" ></a>
       </view>
-      <a class="card-link" href="#" ></a>
-    </view>
+    </view> -->
+    <view class="col-xs-12 col-sm-4">
+      <block wx:for="{{services}}">
+        <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/33242/cooking-ingredient-cuisine-kitchen.jpg?auto=compress&cs=tinysrgb&h=750&w=1260');">
+          <view class="card-category">{{item.name}}</view>
+          <view class="userProfile-name">{{item.user.username}}
+            <image class="avatar" src="https://picsum.photos/200/300"></image>
+          </view>
+          <view class="card-description">
+            <text>{{item.description}}</text>
+          </view>
+        </view>
+      </block>
     </view>
   </view>
-</view>
-
 </view>

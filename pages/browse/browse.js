@@ -6,16 +6,20 @@ const path = require('./mock')
 Page({
   data: {
     inputShowed: false,
-    inputVal: ""
+    inputVal: "",
+    services: []
   },
   onLoad: function () {
     console.log(444444444,'browse Onload')
+    
+    
+    this.setData({ services: mock.services})
+    app.globalData.services = mock.services
+    console.log(this.data.mock, this.data.services)
+    console.log(245, this.data.services[0].user.username)
     wx.redirectTo({
       url: '/pages/show/show',
     })
-    console.log(3423423432, "test")
-    console.log(423423423, mock)
-    console.log(444444, "test")
   },
   showInput: function () {
     this.setData({

@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/browse/browse",
+    "pages/index/index",
     
     "pages/show/show",
     "pages/editprofile/editprofile",
