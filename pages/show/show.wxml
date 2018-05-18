@@ -9,7 +9,7 @@
     <view class='margin'/> 
     <block wx:for="{{user.services}}" >
       <view class='service-title'>{{item.name}}</view>
-      <button class="button1">Book</button>
+      <button bindTap="goToBookingPage" data-serviceId="{{item.id}}" class="button1">Book</button>
       <text class='title'>~~~~ </text>
     </block>
     </view>

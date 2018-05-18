@@ -16,14 +16,14 @@ Page({
       description: description,
       user_id: app.globalData.userId
     }
-  console.log(userservice.user_id)
+  console.log(88888888, userservice.user_id)
 
   wx.request({
     url: this.data.url + 'services',
     method: "POST",
     data: userservice,
     success(res){
-      console.log(res)
+      console.log(7777777,res)
       wx.reLaunch({
         url: `/pages/show/show?id=${res.data.userId}`
       })

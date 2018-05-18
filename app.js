@@ -15,7 +15,7 @@ App({
           },
           // insert next code here
           success: res => {
-            console.log(res)
+            console.log(34343434343434,res)
             this.globalData.userId = res.data.userId
           }
         })
@@ -23,6 +23,7 @@ App({
     })
   },
   globalData: {
-    host: 'http://localhost:3000/api/v1/'
+    host: 'http://localhost:3000/api/v1/',
+    userId: 0
   }
 })
