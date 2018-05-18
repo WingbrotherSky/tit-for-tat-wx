@@ -1,0 +1,30 @@
+<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.pexels.com/photos/532064/pexels-photo-532064.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');">
+   <view class="banner-content">    
+    <view class='h1'>Yayyy ! Your service has been selected </view>  
+
+    <view class="card" data-user="{{item.user}}" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/1087568/pexels-photo-1087568.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');"> 
+    <view class="card-category">{{item.name}}</view>
+    <view class="userProfile-name">{{item.user.username}}
+    </view>
+    <view class="card-description">
+      <text>{{item.description}}</text>
+    </view>
+    </view> 
+
+<view class='h2'>Note</view> 
+<view bindtap='showUser' data-user="{{item.user}}" class="card2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/4636/person-woman-eyes-face.jpg?auto=compress&cs=tinysrgb&h=750&w=1260');"> 
+    <view class="card-category">Hello! I love your passion in music! I think trying the holy art of Tantric Yoga would boost your creativity! Let's trade 30 minutes of your music for 30 minutes of yoga! My wechat is Yogaman99. </view>  
+    <view class="userProfile-name">{{myoffer}}
+    </view>
+    <view class="card-description">
+      <text>{{optionalservice}}</text>
+      <text>{{mycontact}}</text>
+    </view>
+    </view> 
+   </view>
+ 
+</view>     
+
+<button bindtap="acceptTap" class="button1">Accept</button>
+<button bindtap="rejectTap" class="button2">Reject</button>
+<button bindtap='counterTap' class="button3">Counter</button>

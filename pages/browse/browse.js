@@ -66,15 +66,25 @@ Page({
     })
   },
   inputTyping: function (e) {
+    console.log(e.detail.value)
     this.setData({
       inputVal: e.detail.value
     });
-    if (this.data.inputVal != "") {
+    if (this.data.inputVal.length >= 1) {
       let that = this
       wx.request({
         url: this.data.host + 'services',
         method: 'GET',
         data: {query: this.data.inputVal},
+        success(res) {
+          that.setData({ services: res.data.services })
+        }
+      })
+    } else {
+      let that = this
+      wx.request({
+        url: this.data.host + 'services',
+        method: 'GET',
         success(res) {
           that.setData({ services: res.data.services })
         }

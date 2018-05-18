@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/addservice/addservice",
     "pages/index/index",
+    "pages/viewoffer/viewoffer",
+    "pages/addservice/addservice",
     "pages/browse/browse",
     "pages/show/show",
     "pages/editprofile/editprofile",
@@ -35,8 +36,8 @@
   "iconPath": "/image/star.png",
   "selectedIconPath": "/image/star.png"
     }, {
-      "pagePath": "pages/service/service",
-      "text": "My Service",
+      "pagePath": "pages/viewoffer/viewoffer",
+      "text": "View Offers",
       "iconPath": "/image/user.png",
       "selectedIconPath": "/image/user.png"
   }]
