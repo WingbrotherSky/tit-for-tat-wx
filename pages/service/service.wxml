@@ -3,33 +3,43 @@
 <view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.pexels.com/photos/532064/pexels-photo-532064.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');">
    <view class="banner-content"> 
 
-  <!-- <block wx:for="{{services}}">  -->
-        <view bindtap='showUser' data-user="{{item.user}}" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/33242/cooking-ingredient-cuisine-kitchen.jpg?auto=compress&cs=tinysrgb&h=750&w=1260');">
+  <view class="book-header">{{service_name}}</view>  
+        
+
+    <view data-user="{{item.user}}" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/1087568/pexels-photo-1087568.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');"> 
+        
+
           <view class="card-category">{{item.name}}</view>
           <view class="userProfile-name">{{item.user.username}}
             <image class="avatar" src="https://picsum.photos/200/300"></image>
           </view>
           <view class="card-description">
-            <text>{{item.description}}</text>
+            <text>{{service_description}}</text>
           </view>
-         </view>
-      <!-- </block> -->
+        </view>
 
-     <view class="card"> 
     
-    </view>
-     <text>My Offer</text>  
-    <view class="page-body">
-      <view class="page-section">
-        <form>
-          <view class="user-input">
-          <view class="textarea-wrp">
-            <textarea bindblur="bindTextAreaBlur" style='input-size' placeholder='Type your awesome offer here !' class='input-height' auto-height />
-          </view>
-          </view>
+     
+
+     <view class="container">
+    <view class="wrap">
+        <form bindsubmit="bindSubmit">
+
+        <view class="user-input1">
+        <view class="text-area-wrap">
+            <textarea style="height: 50px;" placeholder="What do you want to trade for this service? What is your preferred method of contact?" class="input-height" name="detail" maxlength="-1"/>
+        </view>
+        </view>
+
+       
+
+         
+        <button bindtap='openMap'>Choose your location</button>
+
+        <button type="primary" formType="submit">Send Offer</button>
         </form>
-      </view>
-    </view>
-    <button class="btn btn-primary btn-lg">Submit</button>
-   </view> 
-</view>
+
+        </view>
+        </view>
+        </view>
+        </view>

@@ -1,3 +1,4 @@
+const app = getApp()
 // pages/service/service.js
 Page({
 
@@ -8,16 +9,28 @@ Page({
   
   },
 
+  onLoad(options) {
+    this.setData({host: app.globalData.host})
+    this.setData({ service_id: options.id, service_name: options.name, service_description: options.description})
+  },
   /**
    * 生命周期函数--监听页面加载
    */
-  clickSubmit: function (options) {
-  console.log(34343434,"service page")
+  bindSubmit: function (e) {
+    console.log(e)
+    wx.request({
+      url: this.data.host + 'contracts',
+      method: 'post',
+      data: {service_id: this.data.service_id, user_id: app.globalData.userId, note: e.detail.value.detail},
+      success(){
+        wx.reLaunch({url: '/pages/browse/browse'})
+      }
+    })
   
 
-    wx.reLaunch({
-      url: '/pages/browse/browse',
-    })
+    //wx.reLaunch({//
+      //url: '/pages/browse/browse',//
+    //})//
 
   },
 

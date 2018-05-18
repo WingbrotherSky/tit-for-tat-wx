@@ -20,8 +20,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   goToBookingPage: function(e) {
+    const data = e.currentTarget.dataset.service
+    console.log(22222, data)
     wx.reLaunch({
-      url: '',
+      url: `/pages/service/service?id=${data.id}&name=${data.name}&description=${data.description}`,
     })
   },
 
