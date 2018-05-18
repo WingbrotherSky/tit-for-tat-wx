@@ -3,7 +3,7 @@
 <view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.pexels.com/photos/532064/pexels-photo-532064.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');">
    <view class="banner-content"> 
 
-  <view class="book-header">Selected Service</view>  
+  <view class="book-header">{{service_name}}</view>  
         
 
     <view data-user="{{item.user}}" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/1087568/pexels-photo-1087568.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');"> 
@@ -14,7 +14,7 @@
             <image class="avatar" src="https://picsum.photos/200/300"></image>
           </view>
           <view class="card-description">
-            <text>{{item.description}}</text>
+            <text>{{service_description}}</text>
           </view>
         </view>
 
@@ -27,30 +27,16 @@
 
         <view class="user-input1">
         <view class="text-area-wrap">
-            <textarea value="{{detail}}" style="input-size" placeholder="Please Add Details on Desired Service" class="input-height" name="detail" maxlength="-1" auto-height />
+            <textarea style="height: 50px;" placeholder="What do you want to trade for this service? What is your preferred method of contact?" class="input-height" name="detail" maxlength="-1"/>
         </view>
         </view>
 
-        <view class="user-input">
-        <view class="text-area-wrap">
-            <textarea value="{{myoffer}}" style="input-size" placeholder="My Offer" class="input-height" name="service" maxlength="-1" auto-height />
-        </view>
-        </view>
+       
 
-        <view class="user-input">
-        <view class="text-area-wrap">
-            <textarea value="{{optionalservice}}" style="input-size" placeholder="(Optional: Secondary Offer)" class="input-height" name="optionalservice" maxlength="-1" auto-height />
-        </view>
-        </view>
-
-         <view class="user-input">
-        <view class="text-area-wrap">
-            <textarea value="{{mycontact}}" style="input-size" placeholder="Your contact: Phone # / WeChat ID" class="input-height" name="mycontact" maxlength="-1" auto-height />
-        </view>
-        </view>
+         
         <button bindtap='openMap'>Choose your location</button>
 
-        <button style="margin-bottom:50px" type="primary" form-type="submit">Send Offer</button>
+        <button type="primary" formType="submit">Send Offer</button>
         </form>
 
         </view>
