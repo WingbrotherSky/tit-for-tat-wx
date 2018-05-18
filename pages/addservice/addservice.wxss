@@ -29,3 +29,18 @@ textarea {
   border-radius: 2px;
   border-left: 5px solid #9F9F9C;
 }
+
+button {
+  background-color: #00BED9; 
+  color: white;
+}
+
+.button-location {
+  background-color: #FC005A; 
+  color: white;
+}
+
+.button-photo {
+  background-color: #00BED9; 
+  color: white;
+}

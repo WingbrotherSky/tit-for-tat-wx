@@ -29,19 +29,12 @@
         </view>
         </view>
 
-        <view class="user-input">
-        <view class="text-area-wrap">
-            <textarea value="{{service}}" style="input-size" placeholder="Service: 3" class="input-height" name="service" maxlength="-1" auto-height />
-        </view>
-        </view>
+        <button class="button-photo" bindtap="listenerBtnChooseImage">Upload Service Image</button>
 
-        <view class="user-input">
-        <view class="text-area-wrap">
-            <textarea value="{{description2}}" style="input-size" placeholder="Description of Service: 3" class="input-height" name="description" maxlength="-1" auto-height />
-        </view>
-        </view>
+        
+        
+        <button type="primary" form-type="submit">Submit</button>
 
-        <button style="margin-bottom:50px" type="primary" form-type="submit">Submit</button>
         </form>
         </view>
     </view>

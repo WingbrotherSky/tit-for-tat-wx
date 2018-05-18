@@ -78,7 +78,7 @@
     </view> -->
     <view class="col-xs-12 col-sm-4">
       <block wx:for="{{services}}">
-        <view bindtap='showUser' data-user="{{item.user}}" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/33242/cooking-ingredient-cuisine-kitchen.jpg?auto=compress&cs=tinysrgb&h=750&w=1260');">
+        <view bindtap='showUser' data-user="{{item.user}}" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/200/300');">
           <view class="card-category">{{item.name}}</view>
           <view class="userProfile-name">{{item.user.username}}
             <image class="avatar" src="https://picsum.photos/200/300"></image>

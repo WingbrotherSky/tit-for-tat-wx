@@ -1,10 +1,12 @@
 {
   "pages":[
+    "pages/addservice/addservice",
+    "pages/viewOffer/viewOffer",
     "pages/index/index",
     "pages/browse/browse",
     "pages/show/show",
     "pages/editprofile/editprofile",
-    "pages/addservice/addservice",
+    
     "pages/contract/contract",
     "pages/msg/msg",
     "pages/service/service"
@@ -13,7 +15,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "PENGUIN SHARE",
     "navigationBarTextStyle":"black"
   },
   "tabBar":{
@@ -35,10 +37,10 @@
   "iconPath": "/image/star.png",
   "selectedIconPath": "/image/star.png"
     }, {
-      "pagePath": "pages/service/service",
-      "text": "My Service",
-      "iconPath": "/image/user.png",
-      "selectedIconPath": "/image/user.png"
+      "pagePath": "pages/viewOffer/viewOffer",
+      "text": "Deal",
+      "iconPath": "/image/users.png",
+      "selectedIconPath": "/image/users.png"
   }]
     }
 }

@@ -26,28 +26,55 @@ Page({
   })
   }
   ,
-
-  onLoad: function (options) {
-
+  openMap: function () {
+    wx.chooseLocation({
+      
+    })
   },
+ 
 
-  chooseImage: function (e) {
-    var that = this;
+  listenerBtnChooseImage: function (e) {
+    var that = this
+    // Upload an image
     wx.chooseImage({
-      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
-      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
       success: function (res) {
-        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        console.log('success')
         that.setData({
-          files: that.data.files.concat(res.tempFilePaths)
-        });
+          src: res.tempFilePaths
+        })
+        // Get image info
+        wx.getImageInfo({
+          src: res.tempFilePaths[0],
+          success: function (res) {
+            console.log(res.width)
+            console.log(res.height)
+            console.log(111, res.path)
+            let files = that.data.files
+            files.push(res.path)
+            that.setData({files: files})
+          }
+        })
+        previewImage: (e) {
+          console.log(989898, that.data.files)
+          wx.previewImage({
+            current: e.target.dataset.src, // 当前显示图片的http链接
+            urls: that.data.files
+          })
+        }
+         
+
+        // wx.previewImage({
+        //   src: res.tempFilePaths[0],
+        //   success: function (res) {
+        //     console.log(res.width)
+        //     console.log(res.height)
+        //     console.log(res.path)
+        //   }
+        // })
       }
     })
-  },
-  previewImage: function (e) {
-    wx.previewImage({
-      current: e.currentTarget.id, // 当前显示图片的http链接
-      urls: this.data.files // 需要预览的图片http链接列表
-    })
   }
-});
+})
