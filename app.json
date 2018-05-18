@@ -1,10 +1,10 @@
 {
   "pages":[
+    "pages/addservice/addservice",
     "pages/index/index",
     "pages/browse/browse",
     "pages/show/show",
     "pages/editprofile/editprofile",
-    "pages/addservice/addservice",
     "pages/contract/contract",
     "pages/msg/msg",
     "pages/service/service"

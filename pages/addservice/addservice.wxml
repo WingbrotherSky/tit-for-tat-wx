@@ -6,36 +6,12 @@
         <form bindsubmit="bindSubmit">
             <view class="user-input">
                 <view class="text-area-wrap">
-                    <textarea value="{{service}}" style="input-size" placeholder="Service: 1" class="input-height" name="service" maxlength="-1" auto-height />
+                    <textarea value="{{service}}" style="input-size" placeholder="Insert Name of New Service" class="input-height" name="service" maxlength="-1" auto-height />
                 </view>
             </view>
             <view class="user-input">
                 <view class="text-area-wrap">
-                    <textarea value="{{description}}" style="input-size" placeholder="Description of Service: 1" class="input-height" name="description" maxlength="-1" auto-height />
-                </view>
-            </view>
-
-            <view class="user-input">
-                <view class="text-area-wrap">
-                    <textarea value="{{service}}" style="input-size" placeholder="Service: 2" class="input-height" name="service" maxlength="-1" auto-height />
-                </view>
-            </view>
-
-            <view class="user-input">
-                <view class="text-area-wrap">
-                    <textarea value="{{description2}}" style="input-size" placeholder="Description of Service: 2" class="input-height" name="description" maxlength="-1" auto-height />
-                </view>
-            </view>
-
-            <view class="user-input">
-                <view class="text-area-wrap">
-                    <textarea value="{{service}}" style="input-size" placeholder="Service: 3" class="input-height" name="service" maxlength="-1" auto-height />
-                </view>
-            </view>
-
-            <view class="user-input">
-                <view class="text-area-wrap">
-                    <textarea value="{{description2}}" style="input-size" placeholder="Description of Service: 3" class="input-height" name="description" maxlength="-1" auto-height />
+                    <textarea value="{{description}}" style="input-size" placeholder="Description of Service" class="input-height" name="description" maxlength="-1" auto-height />
                 </view>
             </view>
 

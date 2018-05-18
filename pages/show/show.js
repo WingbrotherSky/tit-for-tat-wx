@@ -25,6 +25,7 @@ Page({
       url: this.data.host + `users/${options.id}`,
       method: 'GET',
       success(res) {
+        console.log(11111111111, res)
         that.setData({ user: res.data })
       }
     })
