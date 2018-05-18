@@ -1,6 +1,9 @@
+app = getApp()
+
 Page({
   data: {
-    files: []
+    files: [],
+    url: app.globalData.url
   },
 
   bindSubmit: function (e) {
@@ -15,7 +18,7 @@ Page({
 
 
   wx.request({
-    url: '/pages/addservice/addservice', //Waiting for Server//
+    url: url + 'services',
     method: "POST",
     data: userservice,
     success(res){

@@ -8,8 +8,8 @@ App({
         console.log(333333,res)
         // insert next code here
         wx.request({
-          url: host + 'api/v1/login', 
-          method: 'post', 
+          url: host + 'api/v1/login',
+          method: 'post',
           data: {
             code: res.code
           },
@@ -22,5 +22,7 @@ App({
       }
     })
   },
-  globalData: {}
+  globalData: {
+    host: 'http://localhost:3000/api/v1/'
+  }
 })

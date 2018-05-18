@@ -14,7 +14,7 @@
             <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
         </view>
         <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+            <!-- <navigator url="" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
                     <view>Service 1</view>
                 </view>
@@ -33,7 +33,7 @@
                 <view class="weui-cell__bd">
                     <view>Service 4</view>
                 </view>
-            </navigator>
+            </navigator> -->
         </view>
     </view>
   </view>

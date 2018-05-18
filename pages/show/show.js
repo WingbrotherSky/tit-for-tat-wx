@@ -1,4 +1,5 @@
 const mock = require('./mock')
+const app = getApp()
 
 // pages/show/show.js
 Page({
@@ -7,8 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
-
+    host: app.globalData.host
   },
     // click:function(e) {
     //   wx.navigateBack({
@@ -19,10 +19,15 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    let user = mock
-    this.setData({user: mock})
-    console.log(this.data.user)
+  onLoad: function(options) {
+    let that = this
+    wx.request({
+      url: this.data.host + `users/${options.id}`,
+      method: 'GET',
+      success(res) {
+        that.setData({ user: res.data })
+      }
+    })
   },
 
   /**
