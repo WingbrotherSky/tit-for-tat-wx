@@ -1,6 +1,9 @@
+const app = getApp()
+
 Page({
   data: {
-    files: []
+    files: [],
+    url: app.globalData.host
   },
 
   bindSubmit: function (e) {
@@ -9,18 +12,20 @@ Page({
     let id = this.data.id;
 
     let userservice = {
-      service: service,
-      description: description
+      name: service,
+      description: description,
+      user_id: app.globalData.userId
     }
-
+  console.log(88888888, userservice.user_id)
 
   wx.request({
-    url: '/pages/addservice/addservice', //Waiting for Server//
+    url: this.data.url + 'services',
     method: "POST",
     data: userservice,
     success(res){
-      wx.redirectTo({
-        url: '/pages/show/show'
+      console.log(7777777,res)
+      wx.reLaunch({
+        url: `/pages/show/show?id=${res.data.userId}`
       })
     }
   })

@@ -5,6 +5,7 @@ const path = require('./mock')
 
 Page({
   data: {
+    host: app.globalData.host,
     inputShowed: false,
     inputVal: "",
     services: []
@@ -19,22 +20,25 @@ Page({
 
 
   onLoad: function () {
-    
-    
-    this.setData({ services: mock.services})
+    let that = this
+    wx.request({
+      url: this.data.host + 'services',
+      method: 'GET',
+      success(res) {
+        that.setData({ services: res.data.services })
+      }
+    })
   },
 
   showUser: function(e) {
     const data = e.currentTarget.dataset
     const user = data.user
-    console.log(user)
     // wx.navigateTo({
     //   url: `/pages/show/show?=${user.id}`,
     // })
-    wx.switchTab({
-      url: `/pages/show/show?=${user.id}`,
+    wx.reLaunch({
+      url: `/pages/show/show?id=${user.id}`,
     })
-    console.log(user.id)
   },
 
   showInput: function () {
@@ -52,11 +56,30 @@ Page({
     this.setData({
       inputVal: ""
     });
+    let that = this
+    wx.request({
+      url: this.data.host + 'services',
+      method: 'GET',
+      success(res) {
+        that.setData({ services: res.data.services })
+      }
+    })
   },
   inputTyping: function (e) {
     this.setData({
       inputVal: e.detail.value
     });
+    if (this.data.inputVal != "") {
+      let that = this
+      wx.request({
+        url: this.data.host + 'services',
+        method: 'GET',
+        data: {query: this.data.inputVal},
+        success(res) {
+          that.setData({ services: res.data.services })
+        }
+      })
+    }
   }
 })
 
